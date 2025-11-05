@@ -3,6 +3,13 @@
 
 MusicApp is a lightweight, browser-based music player built using HTML, CSS and JavaScript. It allows you to load and play audio tracks, featuring a user-friendly interface, playback controls and a minimal footprint. The app is perfect for embedding in webpages, using as a prototype, or extending with more advanced features.
 
+## 🌐 Live Preview
+
+👉 Live Demo
+ ← (replace this with your actual deployed link)
+
+📸 Preview
+
 ## 🧩 Features
 
 Simple and clean UI with HTML + CSS and vanilla JavaScript.
