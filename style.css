@@ -1,0 +1,126 @@
+/* Custom Styles */
+        :root {
+            --primary-color: #23d5ab; /* Bright teal */
+            --dark-color-1: #1e0033; /* Deep purple */
+            --dark-color-2: #3a015c; /* Lighter purple */
+        }
+        
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .gradient-bg {
+            /* Updated background with more colors for a better animation */
+            background: linear-gradient(135deg, var(--dark-color-1), #0d001a, var(--dark-color-2), #5a028c, var(--primary-color), var(--dark-color-1));
+            background-size: 600% 600%;
+            animation: gradientShift 25s ease infinite;
+        }
+
+        .frosted-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Webkit scrollbar for playlist */
+        #playlist::-webkit-scrollbar {
+            width: 8px;
+        }
+        #playlist::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        #playlist::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 10px;
+        }
+        #playlist::-webkit-scrollbar-thumb:hover {
+            background: #1fc39a;
+        }
+
+        /* Custom Seek Bar */
+        .seek-bar::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            cursor: pointer;
+            margin-top: -6px; /* Center thumb */
+            transition: background 0.2s;
+        }
+        .seek-bar::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            cursor: pointer;
+        }
+        .seek-bar:hover::-webkit-slider-thumb {
+            background: #ffffff;
+        }
+        .seek-bar::-webkit-slider-runnable-track {
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+        }
+        .seek-bar::-moz-range-track {
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+        }
+
+        .visualizer-container {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 10px 0;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        #visualizerCanvas {
+            width: 100%;
+            height: 80px;
+        }
+
+        /* Playlist Active Item */
+        .playlist-item.active {
+            background: rgba(35, 213, 171, 0.2);
+            font-weight: 600;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        /* Custom Context Menu */
+        .context-menu {
+            position: absolute;
+            z-index: 10;
+            display: none;
+            min-width: 150px;
+            padding: 8px 0;
+            border-radius: 8px;
+        }
+        .context-menu-item {
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .context-menu-item:hover {
+            background: rgba(35, 213, 171, 0.2);
+        }
+        .context-menu-divider {
+            height: 1px;
+            margin: 4px 0;
+            background: rgba(255, 255, 255, 0.1);
+        }

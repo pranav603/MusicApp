@@ -1,0 +1,2 @@
+assets/music/* filter=lfs diff=lfs merge=lfs -text
+assets/thumbnails/* filter=lfs diff=lfs merge=lfs -text
