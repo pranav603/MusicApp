@@ -7,8 +7,9 @@ MusicApp is a lightweight, browser-based music player built using HTML, CSS and 
 
 👉 Live Demo
  ← (replace this with your actual deployed link)
+ 
+![MusicApp Preview](./preview.png)
 
-📸 Preview
 
 ## 🧩 Features
 
